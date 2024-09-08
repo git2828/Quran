@@ -80,7 +80,7 @@ function renderPage() {
 
     if (fullTranslationMode) {
         // In full translation mode, display all translations as a paragraph
-        const allTranslations = translationSurahData.map((translation, index) => `${index + 1} ${translation[0]}`).join(' ');
+        const allTranslations = translationSurahData.map((translation, index) => `${index + 1}. ${translation[0]}`).join(' ');
         content = `<div class="full-translation"><p>${allTranslations}</p></div>`;
     } else {
         // Normal mode: Display Quranic text with corresponding translation and ayah number
