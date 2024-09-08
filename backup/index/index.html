@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Translation Web App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="faruma.ttf" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Quran Translation</h1>
+            <div class="controls">
+                <select id="surahSelect"></select>
+                <label for="ayatCount">Ayat per page:</label>
+                <input type="number" id="ayatCount" value="5" min="1" max="10">
+                <button id="toggleDarkMode">Toggle Dark Mode</button>
+                <button id="toggleQuranicText">Show/Hide Quranic Text</button>
+                <button id="toggleTranslation">Show/Hide Translation</button>
+            </div>
+        </header>
+
+        <main id="quranContent">
+            <!-- Quranic verses and translations will be loaded here -->
+        </main>
+
+        <footer>
+            <button id="prevPage">Previous</button>
+            <span id="paginationInfo"></span>
+            <button id="nextPage">Next</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

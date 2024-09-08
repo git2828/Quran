@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Faruma';
+    src: url('faruma.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Faruma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.ayah {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.ayah.highlight {
+    background-color: #555;
+}
+
+/* Align Arabic Quranic text to the right */
+.quranic {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Faruma', sans-serif;
+    font-size: 1.2em; /* Slightly larger for readability */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Align Dhivehi translation text to the right */
+.translation {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Faruma', sans-serif; /* Ensure Faruma font is applied */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styles for full translation mode */
+.full-translation {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Faruma', sans-serif;
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.6; /* Adjust line height for better readability */
+    padding: 10px;
+}
+
+/* Hide the Quranic text in full translation mode */
+.full-translation .quranic {
+    display: none;
+}
+
+.ayah-number {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #000; /* Optional: Adjust color to ensure visibility */
+}
