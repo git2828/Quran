@@ -95,7 +95,7 @@ function renderPage() {
 
             content += `<div class="ayah" data-index="${index}">
                           ${showQuranText ? `<p class="quranic"><span class="ayah-number">${ayahNumber}</span> ${ayahText}</p>` : ''}
-                          ${showTranslation ? `<p class="translation">${translationText}</p>` : ''}
+                          ${showTranslation ? `<p class="translation"><span class="ayah-number">${ayahNumber}</span>${translationText}</p>` : ''}
                         </div>`;
         });
     }
